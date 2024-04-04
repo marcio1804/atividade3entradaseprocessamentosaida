@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner scanner= new Scanner(System.in);
+    
+        System.out.println("informe a primeira nota");
+         double valor1 = scanner.nextDouble();
+        System.out.println("informe a segunda nota");
+         double valor2 = scanner.nextDouble();
+         
+         double total =(valor1 + valor2) /2; 
+         
+         System.out.println("A nota final e: " +total);
+         
+         scanner.close();
+    }
+}
