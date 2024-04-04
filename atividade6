@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+import java.util.Scanner;
+
+public class SistemaDesconto {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+      
+        System.out.print("Digite o nome do produto: ");
+        String nomeProduto = scanner.nextLine();
+
+    
+        System.out.print("Digite o preco do produto: ");
+        double precoProduto = scanner.nextDouble();
+
+      
+        System.out.print("Digite o percentual de desconto: ");
+        double percentualDesconto = scanner.nextDouble();
+
+       
+        double novoPreco = precoProduto * (1 - percentualDesconto / 100);
+
+        
+        System.out.printf("O novo preco do produto  com desconto e:"+ novoPreco);
+
+        scanner.close();
+    }
+    
+}
